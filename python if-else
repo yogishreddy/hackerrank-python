@@ -11,8 +11,9 @@ Constraints
 Output Format
 Print Weird if the number is weird. Otherwise, print Not Weird.
 # PROGRAM:
-#!/bin/python3
 
+
+#!/bin/python3
 import math
 import os
 import random
