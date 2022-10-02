@@ -1,0 +1,48 @@
+def low(s):
+    for i in s:
+        if i.islower():
+            return True
+        else:
+            continue
+    else:
+        return False
+def up(s):
+    for i in s:
+        if i.isupper():
+            return True
+        else:
+            continue
+    else:
+        return False
+
+if __name__ == '__main__':
+    s = input()
+    for i in s:
+        if i.isalnum():
+            print(True)
+            break
+        else:
+            continue
+    else:
+        print(False)            
+    for i in s:
+        if i.isalpha():
+            print(True)
+            break
+        else:
+            continue
+    else:
+            print(False)
+    for i in s:
+        if i.isdigit():
+            print(True)
+            break
+        else:
+            continue
+    else:
+        print(False)
+    print(low(s))
+    print(up(s))
+        
+            
+    
