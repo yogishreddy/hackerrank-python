@@ -1,0 +1,34 @@
+Program:-
+n,m=map(int,input().split())
+arr = list(map(int,input().strip().split()[:n]))
+A = list(map(int,input().strip().split()[:m]))
+B = list(map(int,input().strip().split()[:m]))
+happy =0
+A = set(A)
+B=set(B)
+if n>=1 and n<= 10**5 and m>=1 and m<=10**5:
+    for i in arr:
+        if i in A:
+            happy+=1
+        if i in B:
+            happy-=1
+    print(happy)
+
+Description:-
+There is an array of n integers. There are also 2 disjoint sets, A and B, each containing m integers. You like all the integers in set A and 
+dislike all the integers in set B. Your initial happiness is 0. For each i integer in the array, if iEA, you add 1 to your happiness. If iEB, you add -1
+to your happiness. Otherwise, your happiness does not change. Output your final happiness at the end.
+Input Format
+The first line contains integers  and  separated by a space.
+The second line contains  integers, the elements of the array.
+The third and fourth lines contain  integers,  and , respectively.
+
+Output Format
+Output a single integer, your total happiness.
+Sample Input
+3 2
+1 5 3
+3 1
+5 7
+Sample Output
+1
