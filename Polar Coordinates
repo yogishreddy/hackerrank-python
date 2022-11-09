@@ -1,0 +1,8 @@
+from cmath import phase
+def rp(com):
+    return pow(pow(com.real,2)+pow(com.imag,2),0.5),phase(com)
+
+com = complex(input())
+r,p=rp(com)
+print("{:.3f}".format(r))
+print("{:.3f}".format(p))
