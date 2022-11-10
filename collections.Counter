@@ -2,7 +2,7 @@ from collections import Counter
 def costcal(sizes,noc):
     sum=0
     while noc:
-        s,v=map(int,input().split())
+        s,v=map(int,input().split(' '))
         if s in Counter(sizes).keys():
             sum+=v
             sizes.remove(s)
